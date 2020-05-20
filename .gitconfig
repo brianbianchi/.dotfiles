@@ -1,0 +1,29 @@
+# This is Git's per-user configuration file.
+[user]
+	name = brianbianchi
+	email = bianchibrianj@gmail.com
+
+[alias]
+	all = add .
+	cl = clone
+	co = checkout
+	cob = checkout -b
+	com = commit -m
+	df = diff
+	dfw = diff --word-diff
+	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg = log
+	prune = fetch --prune
+	rb = rebase
+	rst = reset
+	rstall = reset HEAD .
+	st = status
+	stats = shortlog -sn
+	sth = stash
+	u = add -u
+	undo = reset --soft HEAD^
+
+[color "status"]
+	added = green
+	changed = yellow bold
+	untracked = red bold
