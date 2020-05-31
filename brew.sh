@@ -18,3 +18,4 @@ brew cask install spotify
 brew cask install discord
 brew cask install gimp
 brew cask install vlc
+brew cask install postman
