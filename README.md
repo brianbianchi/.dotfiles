@@ -3,6 +3,7 @@ Configuration.
 
 ### Requirements
 - Clone this repository in your home directory
+- Increase mouse speed - `defaults write -g com.apple.mouse.scaling  5.0`
 - [Homebrew](https://brew.sh/)
 - [Oh my zsh](https://ohmyz.sh/)
 
