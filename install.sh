@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ############################
-# This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
-# And installs Homebrew Packages
+# This script creates symlinks between dotfiles in ${homedir}/dotfiles
+# and the home directory, and installs homebrew packages
 ############################
 
 if [ "$#" -ne 1 ]; then
@@ -28,5 +28,5 @@ for file in ${files}; do
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
 done
 
-# Run homebrew script
+# run homebrew script
 ./brew.sh
