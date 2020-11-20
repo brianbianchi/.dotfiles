@@ -27,3 +27,9 @@
 	added = green
 	changed = yellow bold
 	untracked = red bold
+
+[core]
+	excludesfile = /Users/brianbianchi/.gitignore_global
+	
+[pager]
+	branch = false
