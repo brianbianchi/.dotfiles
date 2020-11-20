@@ -8,6 +8,7 @@ Configuration.
 - [Oh my zsh](https://ohmyz.sh/)
 - Add golang path `mkdir -p $HOME/Go/src/github.com/brianbianchi`
 - Add golang path to `.zshrc`
+- Install [Displaylink](https://www.displaylink.com/downloads/macos) to use external monitor
 ```
 export GOPATH=$HOME/Go
 export GOROOT=/usr/local/opt/go/libexec
