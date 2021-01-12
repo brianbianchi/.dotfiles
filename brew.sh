@@ -20,5 +20,5 @@ brew install --cask discord
 brew install --cask vlc
 brew install --cask postman
 brew install --cask rectangle
-brew install --cask postgresql
+# brew install --cask postgresql
 brew install --cask iterm2

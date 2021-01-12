@@ -30,3 +30,6 @@ done
 
 # run homebrew script
 ./brew.sh
+
+# ~/.bashrc to ~/.zshrc
+echo "[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'" >> ~/.zshrc
