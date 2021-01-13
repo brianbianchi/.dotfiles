@@ -13,4 +13,4 @@ Configuration.
 `$ chmod +x ./install.sh && chmod +x ./brew.sh`
 
 ### Run
-`$ ./install.sh [YOUR HOME PATH]`
+`$ ./install.sh /Users/<username>/`

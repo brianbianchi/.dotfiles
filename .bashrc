@@ -1,5 +1,3 @@
-source ~/.profile
-
 alias ls='ls --color'
 alias v='nvim'
 
@@ -7,7 +5,7 @@ alias v='nvim'
 export GREP_OPTIONS=' — color=auto'
 
 # Set Vim as my default editor
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Golang
 export GOPATH=$HOME/Go

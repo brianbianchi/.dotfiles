@@ -15,7 +15,7 @@ homedir=$1
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bashrc gitconfig .gitignore_global vimrc"
+files="bashrc zshrc gitconfig gitignore_global vimrc"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -30,6 +30,3 @@ done
 
 # run homebrew script
 ./brew.sh
-
-# ~/.bashrc to ~/.zshrc
-echo "[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'" >> ~/.zshrc
