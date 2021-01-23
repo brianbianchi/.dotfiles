@@ -14,6 +14,7 @@ brew install wget
 # Install applications
 brew install --cask google-chrome
 brew install --cask brave-browser
+brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask spotify
 brew install --cask discord
