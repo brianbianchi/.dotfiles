@@ -22,3 +22,7 @@ brew cask install vlc
 brew cask install postman
 brew cask install rectangle
 brew cask install postgresql
+
+# MongoDB
+brew tap mongodb/brew
+brew install mongodb-community
