@@ -8,20 +8,21 @@ brew install automake
 brew install binutils
 brew install htop
 brew install gcc
-brew install tmux
-brew install vim
+brew install neovim
 brew install wget
+brew install postgresql
 
 # Install applications
-brew cask install google-chrome
-brew cask install brave-browser
-brew cask install visual-studio-code
-brew cask install spotify
-brew cask install discord
-brew cask install vlc
-brew cask install postman
-brew cask install rectangle
-brew cask install postgresql
+brew install --cask brave-browser
+brew install --cask discord
+brew install --cask google-chrome
+brew install --cask iterm2
+brew install --cask postman
+brew install --cask rectangle
+brew install --cask slack
+brew install --cask spotify
+brew install --cask visual-studio-code
+brew install --cask vlc
 
 # MongoDB
 brew tap mongodb/brew
