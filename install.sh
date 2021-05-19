@@ -28,5 +28,9 @@ for file in ${files}; do
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
 done
 
+echo "Creating neovim configuration symlink."
+mkdir ${homedir}/.config/nvim
+ln -sf ${dotfiledir}/init.vim ${homedir}/.config/nvim/init.vim
+
 # run homebrew script
 ./brew.sh
