@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
 # Install brew packages
-brew install python3
-brew install golang
-brew install node
 brew install automake
 brew install binutils
-brew install htop
 brew install gcc
+brew install golang
+brew install htop
+brew install telnet
 brew install neovim
-brew install wget
+brew install node
 brew install postgresql
+brew install python3
+brew install wget
 
 # Install applications
 brew install --cask brave-browser
