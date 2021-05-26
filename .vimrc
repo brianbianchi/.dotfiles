@@ -6,6 +6,7 @@ set expandtab
 set smartindent
 set ai
 set number
+set relativenumber
 set hlsearch
 set scrolloff=8
 set ruler

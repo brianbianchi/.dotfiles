@@ -11,4 +11,4 @@ Configuration.
 `$ chmod +x ./install.sh && chmod +x ./brew.sh`
 
 ### Run
-`$ ./install.sh /Users/<username>/`
+`$ ./install.sh /Users/<username>`
