@@ -11,6 +11,7 @@ brew install neovim
 brew install node
 brew install postgresql
 brew install python3
+brew install tmux
 brew install wget
 
 # Install applications
