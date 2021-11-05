@@ -12,6 +12,7 @@ plugins=(
     git
     golang
     osx
+    tmux
     web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
