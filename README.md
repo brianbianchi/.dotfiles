@@ -1,14 +1,15 @@
-# dotfiles
-Configuration.
+> MacOS configuration
 
-### Requirements
+## Requirements
+
 - Clone this repository in your home directory
 - [Homebrew](https://brew.sh/)
 - [Oh my zsh](https://ohmyz.sh/)
-- Install [Displaylink](https://www.displaylink.com/downloads/macos) to use external monitor
+- [Displaylink](https://www.displaylink.com/downloads/macos) - extend to external monitor
 
-### Give permissions to shell scripts
-`$ chmod +x ./install.sh && chmod +x ./brew.sh`
+## Usage
 
-### Run
-`$ ./install.sh /Users/<username>`
+```console
+$ chmod +x ./install.sh && chmod +x ./brew.sh #give permissions to shell scripts
+$ ./install.sh /Users/<username> #run
+```
