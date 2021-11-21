@@ -11,7 +11,7 @@ plugins=(
     dotenv
     git
     golang
-    osx
+    macos
     tmux
     web-search
     zsh-autosuggestions
