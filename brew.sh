@@ -18,7 +18,6 @@ brew install wget
 brew install --cask brave-browser
 brew install --cask discord
 brew install --cask google-chrome
-brew install --cask iterm2
 brew install --cask postman
 brew install --cask rectangle
 brew install --cask slack
