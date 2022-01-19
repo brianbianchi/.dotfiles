@@ -17,6 +17,7 @@ brew install wget
 # Install applications
 brew install --cask brave-browser
 brew install --cask discord
+brew install --cask docker
 brew install --cask google-chrome
 brew install --cask postman
 brew install --cask rectangle
@@ -25,7 +26,3 @@ brew install --cask spotify
 brew install --cask transmission
 brew install --cask visual-studio-code
 brew install --cask vlc
-
-# MongoDB
-brew tap mongodb/brew
-brew install mongodb-community
