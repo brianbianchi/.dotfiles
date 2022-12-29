@@ -8,6 +8,7 @@ brew install golang
 brew install htop
 brew install telnet
 brew install neovim
+brew install nmap
 brew install node
 brew install postgresql
 brew install python3
