@@ -13,3 +13,11 @@
 $ chmod +x ./install.sh && chmod +x ./brew.sh #give permissions to shell scripts
 $ ./install.sh /Users/<username> #run
 ```
+
+## fonts
+
+- [Iosevka](https://github.com/be5invis/Iosevka)
+- [Fira Code](https://github.com/tonsky/FiraCode)
+- [Cascadia Code](https://github.com/microsoft/cascadia-code)
+- [SF Mono](https://developer.apple.com/fonts/)
+- [Comic mono](https://github.com/dtinth/comic-mono-font)
