@@ -16,6 +16,7 @@ brew install tmux
 brew install wget
 
 # Install applications
+brew install --cask anaconda
 brew install --cask brave-browser
 brew install --cask burp-suite
 brew install --cask discord
