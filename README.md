@@ -16,6 +16,7 @@ $ ./install.sh /Users/<username> #run
 
 ## fonts
 
+- [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
 - [Iosevka](https://github.com/be5invis/Iosevka)
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)

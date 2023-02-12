@@ -33,3 +33,7 @@ brew install --cask spotify
 brew install --cask transmission
 brew install --cask visual-studio-code
 brew install --cask vlc
+
+# Fonts
+# brew tap homebrew/cask-fonts
+# brew install --cask font-jetbrains-mono
