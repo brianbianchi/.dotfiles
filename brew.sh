@@ -3,6 +3,7 @@
 # Install brew packages
 brew install automake
 brew install binutils
+brew install chromedriver
 brew install gcc
 brew install golang
 brew install htop
@@ -10,9 +11,10 @@ brew install telnet
 brew install neovim
 brew install nmap
 brew install node
-brew install postgresql
-brew install python3
+# brew install postgresql
+# brew install python3
 brew install tmux
+brew install tree
 brew install wget
 
 # Install applications
@@ -24,7 +26,8 @@ brew install --cask docker
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask insomnia
-brew install --cask rectangle
+brew install --cask rectangle 
+brew install --cask runelite 
 brew install --cask slack
 brew install --cask spotify
 brew install --cask transmission
