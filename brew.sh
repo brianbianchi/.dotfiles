@@ -3,8 +3,7 @@
 # Install brew packages
 brew install automake
 brew install binutils
-brew install chromedriver
-brew install gcc
+ brew install gcc
 brew install golang
 brew install htop
 brew install telnet
@@ -26,8 +25,7 @@ brew install --cask docker
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask insomnia
-brew install --cask rectangle 
-brew install --cask runelite 
+brew install --cask rectangle
 brew install --cask slack
 brew install --cask spotify
 brew install --cask transmission
