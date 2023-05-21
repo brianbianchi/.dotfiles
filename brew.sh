@@ -3,7 +3,7 @@
 # Install brew packages
 brew install automake
 brew install binutils
- brew install gcc
+brew install gcc
 brew install golang
 brew install htop
 brew install telnet
