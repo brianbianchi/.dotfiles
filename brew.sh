@@ -21,7 +21,7 @@ brew install --cask anaconda
 brew install --cask brave-browser
 brew install --cask burp-suite
 brew install --cask discord
-brew install --cask docker
+# brew install --cask docker
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask insomnia
