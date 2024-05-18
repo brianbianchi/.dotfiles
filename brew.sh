@@ -10,6 +10,7 @@ brew install telnet
 brew install neovim
 brew install nmap
 brew install node
+brew install ollama
 # brew install postgresql
 # brew install python3
 brew install tmux
@@ -22,8 +23,7 @@ brew install --cask brave-browser
 brew install --cask burp-suite
 brew install --cask devtoys
 brew install --cask discord
-# brew install --cask docker
-brew install --cask firefox
+brew install --cask docker
 brew install --cask google-chrome
 brew install --cask insomnia
 brew install --cask karabiner-elements
@@ -32,7 +32,7 @@ brew install --cask slack
 brew install --cask spotify
 brew install --cask transmission
 brew install --cask visual-studio-code
-brew install --cask vlc
+# brew install --cask vlc
 
 # Fonts
 # brew tap homebrew/cask-fonts
