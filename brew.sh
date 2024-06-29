@@ -20,7 +20,7 @@ brew install wget
 # Install applications
 brew install --cask anaconda
 brew install --cask brave-browser
-brew install --cask burp-suite
+# brew install --cask burp-suite
 brew install --cask devtoys
 brew install --cask discord
 brew install --cask docker
