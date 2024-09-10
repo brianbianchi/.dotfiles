@@ -2,16 +2,11 @@
 export ZSH="/Users/brianbianchi/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
-# git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 plugins=(
     dotenv
-    git
-    golang
-    macos
     tmux
     web-search
 )
