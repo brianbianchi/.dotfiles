@@ -26,7 +26,7 @@ brew install --cask docker
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask insomnia
-brew install --cask karabiner-elements
+# brew install --cask karabiner-elements
 # brew install --cask prince # md preview enhanced
 brew install --cask rectangle
 brew install --cask slack
