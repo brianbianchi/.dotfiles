@@ -2,7 +2,7 @@
 export ZSH="/Users/brianbianchi/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="robbyrussell"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 plugins=(
@@ -16,7 +16,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export LANG=en_US.UTF-8
-export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+# export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"

@@ -12,14 +12,15 @@ brew install nmap
 brew install node
 brew install ollama
 # brew install postgresql
+brew install pyenv
 # brew install python3
 brew install tmux
 brew install tree
 brew install wget
 
 # Install applications
-brew install --cask anaconda
-brew install --cask brave-browser
+# brew install --cask anaconda
+# brew install --cask brave-browser
 brew install --cask devtoys
 brew install --cask discord
 brew install --cask docker
