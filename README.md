@@ -1,4 +1,4 @@
-> MacOS configuration
+<h1 style="text-align: center;"> dotfiles &#x2699; </h1>
 
 ## Requirements
 
@@ -10,8 +10,11 @@
 ## Usage
 
 ```console
-$ chmod +x ./install.sh && chmod +x ./brew.sh #give permissions to shell scripts
-$ ./install.sh /Users/<username> #run
+chmod +x ./install.sh && chmod +x ./brew.sh
+```
+
+```console
+./install.sh /Users/<username>
 ```
 
 ## fonts
