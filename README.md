@@ -1,4 +1,4 @@
-<h1 style="text-align: center;"> dotfiles &#x2699; </h1>
+<h1 align="center"> dotfiles &#x2699; </h1>
 
 ## Requirements
 
