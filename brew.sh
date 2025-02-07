@@ -30,8 +30,8 @@ brew install --cask rectangle
 brew install --cask slack
 brew install --cask spotify
 brew install --cask transmission
+brew install --cask visual-studio-code
 # brew install --cask vlc
-brew install --cask vscodium
 
 # Fonts
 brew install --cask font-jetbrains-mono
