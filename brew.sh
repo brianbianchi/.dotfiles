@@ -7,14 +7,15 @@ packages=(
     gcc
     golang
     htop
-    telnet
+    mailsy
     neovim
     nmap
     node
-    pyenv
+    telnet
     tmux
     tree
     wget
+    yt-dlp
 )
 
 apps=(
@@ -24,6 +25,7 @@ apps=(
     firefox
     font-jetbrains-mono
     google-chrome
+    miniconda
     prince
     rectangle
     slack

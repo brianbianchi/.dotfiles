@@ -23,6 +23,7 @@ alias v="nvim"
 alias gac="git add . && git commit -m "
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
 alias jn="jupyter notebook"
+alias dlt="networkquality"
 alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
 
 # >>> conda initialize >>>
