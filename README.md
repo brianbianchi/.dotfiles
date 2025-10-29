@@ -1,5 +1,7 @@
 <h1 align="center">.dotfiles &#x2699;</h1>
 
+Automate desktop configuration.
+
 ## Prerequisites
 
 - [Homebrew](https://brew.sh/)
@@ -8,20 +10,19 @@
 
 ## Usage
 
-```console
-# if macOS
-xcode-select --install
+```bash
+xcode-select --install # (macOS)
 ```
 
-```console
+```bash
 git clone <repository_url> $HOME
 ```
 
-```console
+```bash
 chmod +x $HOME/.dotfiles/install.sh && chmod +x $HOME/.dotfiles/apt.sh && chmod +x $HOME/.dotfiles/brew.sh
 ```
 
-```console
+```bash
 $HOME/.dotfiles/install.sh
 ```
 
