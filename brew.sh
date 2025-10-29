@@ -11,6 +11,7 @@ packages=(
     neovim
     nmap
     node
+    pyenv
     telnet
     tmux
     tree
@@ -23,9 +24,9 @@ apps=(
     discord
     docker
     firefox
+    flutter
     font-jetbrains-mono
     google-chrome
-    miniconda
     prince
     rectangle
     slack

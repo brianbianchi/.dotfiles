@@ -1,36 +1,56 @@
 #!/usr/bin/env bash
+set -euo pipefail
 ############################
-# This script creates symlinks between dotfiles in ${homedir}/dotfiles
-# and the home directory, and installs homebrew packages
+# Symlink dotfiles and install packages based on OS.
 ############################
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: install.sh <home_directory>"
-    exit 1
-fi
+dotfiledir="$HOME/.dotfiles"
+files=".gitconfig .gitignore_global .vimrc .zshrc"
 
-homedir=$1
-
-# dotfiles directory
-dotfiledir=${homedir}/dotfiles
-
-# list of files/folders to symlink in ${homedir}
-files="bashrc zshrc gitconfig gitignore_global vimrc"
-
-# change to the dotfiles directory
-echo "Changing to the ${dotfiledir} directory"
-cd ${dotfiledir}
-echo "...done"
-
-# create symlinks (will overwrite old dotfiles)
-for file in ${files}; do
-    echo "Creating symlink to $file in home directory."
-    ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
+echo "Creating symlinks for dotfiles..."
+for file in $files; do
+    src="$dotfiledir/$file"
+    dest="$HOME/$file"
+    if [ ! -e "$src" ]; then
+        echo "Warning: $src does not exist, skipping."
+        continue
+    fi
+    echo "Creating symlink: $dest -> $src"
+    ln -sf "$src" "$dest"
 done
 
-echo "Creating neovim configuration symlink."
-mkdir ${homedir}/.config/nvim
-ln -sf ${dotfiledir}/init.vim ${homedir}/.config/nvim/init.vim
+install_packages_mac() {
+    if [ -x ./brew.sh ]; then
+        echo "Detected macOS. Running brew.sh."
+        $dotfiledir/brew.sh
+    else
+        echo "brew.sh not found or not executable!"
+        exit 1
+    fi
+}
 
-# run homebrew script
-./brew.sh
+install_packages_ubuntu() {
+    if [ -x ./apt.sh ]; then
+        echo "Detected Ubuntu. Running apt.sh."
+        $dotfiledir/apt.sh
+    else
+        echo "apt.sh not found or not executable!"
+        exit 1
+    fi
+}
+
+echo "Detecting OS..."
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    install_packages_mac
+elif [ -f /etc/os-release ]; then
+    . /etc/os-release
+    if [[ "$ID" == "ubuntu" ]]; then
+        install_packages_ubuntu
+    else
+        echo "Unsupported Linux distribution: $ID"
+        exit 1
+    fi
+else
+    echo "Unsupported OS: $OSTYPE"
+    exit 1
+fi

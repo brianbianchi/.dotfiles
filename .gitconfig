@@ -1,38 +1,44 @@
-# This is Git's per-user configuration file.
 [user]
-	name = brianbianchi
+	name = Brian Bianchi
 	email = bianchibrianj@gmail.com
-
-[alias]
-	all = add .
-	cl = clone
-	co = checkout
-	cob = checkout -b
-	com = commit -m
-	df = diff
-	dfw = diff --word-diff
-	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	lg = log
-	prune = fetch --prune
-	rb = rebase
-	rst = reset
-	rstall = reset HEAD .
-	st = status
-	stats = shortlog -sn
-	sth = stash
-	u = add -u
-	undo = reset --soft HEAD^
-
-[color "status"]
-	added = green
-	changed = yellow bold
-	untracked = red bold
+	username = brianbianchi
 
 [core]
-	excludesfile = /Users/brianbianchi/.gitignore_global
-	
-[pager]
-	branch = false
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+
+[branch]
+	sort = -committerdate
+
+[init]
+	defaultBranch = master
+
+[alias]
+    db = "!git branch | grep -v 'master' | xargs git branch -D"
+	ac = "!git add -A && git commit -m"
+	glog = log --graph --color --abbrev-commit --branches --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	plog = log --pretty=format:'%C(green)%h%Creset - %C(blue)%an%Creset, %C(green)%ar%Creset : %s'
+	undo = reset --soft HEAD^
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
 
 [push]
 	autoSetupRemote = true

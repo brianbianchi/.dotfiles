@@ -1,23 +1,31 @@
-<h1 align="center"> dotfiles &#x2699; </h1>
+<h1 align="center">.dotfiles &#x2699;</h1>
 
-## Requirements
+## Prerequisites
 
-- Clone this repository in your home directory
 - [Homebrew](https://brew.sh/)
 - [Oh my zsh](https://ohmyz.sh/)
-- [Displaylink](https://www.displaylink.com/downloads/macos) - extend to external monitor
+- [Displaylink](https://www.displaylink.com/downloads/macos) (optional)
 
 ## Usage
 
 ```console
-chmod +x ./install.sh && chmod +x ./brew.sh
+# if macOS
+xcode-select --install
+```
+
+```console
+git clone <repository_url> $HOME
+```
+
+```console
+chmod +x $HOME/.dotfiles/install.sh && chmod +x $HOME/.dotfiles/apt.sh && chmod +x $HOME/.dotfiles/brew.sh
 ```
 
 ```console
 ./install.sh /Users/<username>
 ```
 
-## fonts
+## Font considerations
 
 - [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
 - [Iosevka](https://github.com/be5invis/Iosevka)
