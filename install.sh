@@ -20,7 +20,7 @@ for file in $files; do
 done
 
 install_packages_mac() {
-    if [ -x ./brew.sh ]; then
+    if [ -x $dotfiledir/brew.sh ]; then
         echo "Detected macOS. Running brew.sh."
         $dotfiledir/brew.sh
     else
@@ -30,7 +30,7 @@ install_packages_mac() {
 }
 
 install_packages_ubuntu() {
-    if [ -x ./apt.sh ]; then
+    if [ -x $dotfiledir/apt.sh ]; then
         echo "Detected Ubuntu. Running apt.sh."
         $dotfiledir/apt.sh
     else

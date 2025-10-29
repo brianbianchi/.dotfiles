@@ -22,7 +22,7 @@ chmod +x $HOME/.dotfiles/install.sh && chmod +x $HOME/.dotfiles/apt.sh && chmod 
 ```
 
 ```console
-./install.sh /Users/<username>
+$HOME/.dotfiles/install.sh
 ```
 
 ## Font considerations
