@@ -8,6 +8,8 @@ export LANG=en_US.UTF-8
 alias zshconfig="nvim ~/.zshrc"
 alias jn="jupyter notebook"
 alias dlt="networkquality"
+alias uuid="uuidgen"
+alias jwt='jq -R "split(\".\") | .[0:2] | map(@base64d) | map(fromjson)" <<<'
 
 # pyenv setup
 export PYENV_ROOT="$HOME/.pyenv"
