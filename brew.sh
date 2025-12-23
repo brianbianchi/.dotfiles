@@ -12,6 +12,7 @@ packages=(
     nmap
     node
     pyenv
+    ruby
     telnet
     tmux
     tree
@@ -20,17 +21,14 @@ packages=(
 )
 
 apps=(
-    devtoys
     discord
     docker
     firefox
-    flutter
     font-jetbrains-mono
     google-chrome
     prince
     rectangle
     slack
-    spotify
     transmission
     visual-studio-code
     vlc

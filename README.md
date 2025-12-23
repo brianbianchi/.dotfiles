@@ -6,7 +6,6 @@ Automate desktop configuration.
 
 - [Homebrew](https://brew.sh/)
 - [Oh my zsh](https://ohmyz.sh/)
-- [Displaylink](https://www.displaylink.com/downloads/macos) (optional)
 
 ## Usage
 
@@ -19,7 +18,9 @@ git clone <repository_url> $HOME
 ```
 
 ```bash
-chmod +x $HOME/.dotfiles/install.sh && chmod +x $HOME/.dotfiles/apt.sh && chmod +x $HOME/.dotfiles/brew.sh
+chmod +x $HOME/.dotfiles/install.sh
+chmod +x $HOME/.dotfiles/apt.sh
+chmod +x $HOME/.dotfiles/brew.sh
 ```
 
 ```bash
