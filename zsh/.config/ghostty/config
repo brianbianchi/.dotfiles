@@ -1,0 +1,42 @@
+font-family = SauceCodePro Nerd Font
+font-size = 14
+
+background = 181818
+foreground = d4d4d4
+
+# Cursor
+cursor-color = d4d4d4
+cursor-style = bar
+cursor-style-blink = false
+
+# Selection
+selection-background = 3a3a3a
+selection-foreground = d4d4d4
+
+# Normal colors
+palette = 0=#3a3a3a
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#61afef
+palette = 5=#c678dd
+palette = 6=#56b6c2
+palette = 7=#d4d4d4
+
+# Bright colors
+palette = 8=#545454
+palette = 9=#e06c75
+palette = 10=#98c379
+palette = 11=#e5c07b
+palette = 12=#61afef
+palette = 13=#c678dd
+palette = 14=#56b6c2
+palette = 15=#ffffff
+
+background-opacity = 0.95
+background-blur = true
+
+window-padding-x = 12
+window-padding-y = 8
+
+macos-titlebar-style = native

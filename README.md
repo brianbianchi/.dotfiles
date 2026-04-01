@@ -5,7 +5,6 @@ Automate desktop configuration using [GNU Stow](https://www.gnu.org/software/sto
 ## Prerequisites
 
 - [Homebrew](https://brew.sh/)
-- [Oh My Zsh](https://ohmyz.sh/)
 
 ## Usage
 
@@ -30,7 +29,7 @@ stow --restow --target=$HOME <package>
 
 ## Font considerations
 
-- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+- [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts)
 - [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
 - [Iosevka](https://github.com/be5invis/Iosevka)
 - [Fira Code](https://github.com/tonsky/FiraCode)
