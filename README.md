@@ -1,16 +1,16 @@
 <h1 align="center">.dotfiles &#x2699;</h1>
 
-Automate desktop configuration.
+Automate desktop configuration using [GNU Stow](https://www.gnu.org/software/stow/).
 
 ## Prerequisites
 
 - [Homebrew](https://brew.sh/)
-- [Oh my zsh](https://ohmyz.sh/)
+- [Oh My Zsh](https://ohmyz.sh/)
 
 ## Usage
 
 ```bash
-xcode-select --install # (macOS)
+xcode-select --install
 ```
 
 ```bash
@@ -18,20 +18,22 @@ git clone <repository_url> $HOME
 ```
 
 ```bash
-chmod +x $HOME/.dotfiles/install.sh
-chmod +x $HOME/.dotfiles/apt.sh
-chmod +x $HOME/.dotfiles/brew.sh
+$HOME/.dotfiles/install.sh
 ```
 
+To stow a single package manually:
+
 ```bash
-$HOME/.dotfiles/install.sh
+cd $HOME/.dotfiles
+stow --restow --target=$HOME <package>
 ```
 
 ## Font considerations
 
+- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 - [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
 - [Iosevka](https://github.com/be5invis/Iosevka)
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 - [SF Mono](https://developer.apple.com/fonts/)
-- [Comic mono](https://github.com/dtinth/comic-mono-font)
+- [Comic Mono](https://github.com/dtinth/comic-mono-font)

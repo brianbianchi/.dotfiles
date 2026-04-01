@@ -1,37 +1,39 @@
 #!/usr/bin/env bash
 
 packages=(
-    automake
-    binutils
-    ffmpeg
-    gcc
-    golang
-    htop
-    mailsy
-    neovim
-    nmap
-    node
-    pyenv
-    ruby
-    telnet
-    tmux
-    tree
-    wget
-    yt-dlp
+    automake            # build tool for generating Makefiles
+    binutils            # GNU binary utilities (objdump, nm, etc.)
+    stow                # symlink manager for dotfiles
+    ffmpeg              # audio/video converter and streaming tool
+    gcc                 # GNU C/C++ compiler
+    golang              # Go programming language
+    htop                # interactive process viewer
+    mailsy              # CLI email client
+    neovim              # text editor
+    nmap                # network scanner and security tool
+    node                # JavaScript runtime
+    pyenv               # Python version manager
+    ruby                # Ruby programming language
+    telnet              # network protocol client for debugging
+    tmux                # terminal multiplexer
+    tree                # directory tree viewer
+    wget                # file downloader
+    yt-dlp              # YouTube and media downloader
 )
 
 apps=(
-    discord
-    docker
-    firefox
-    font-jetbrains-mono
-    google-chrome
-    prince
-    rectangle
-    slack
-    transmission
-    visual-studio-code
-    vlc
+    discord             # voice, video, and text chat
+    docker              # containerization platform
+    firefox             # web browser
+    font-jetbrains-mono # monospace font for developers
+    font-source-code-pro # monospace font by Adobe
+    google-chrome       # web browser
+    prince              # HTML to PDF converter
+    rectangle           # window snapping and management
+    slack               # team messaging
+    transmission        # BitTorrent client
+    visual-studio-code  # code editor
+    vlc                 # media player
 )
 
 echo "Installing packages..."

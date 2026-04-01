@@ -1,40 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 ############################
-# Symlink dotfiles and install packages based on OS.
+# Install packages and stow dotfiles.
 ############################
 
 dotfiledir="$HOME/.dotfiles"
-files=".gitconfig .gitignore_global .vimrc .zshrc"
-
-echo "Creating symlinks for dotfiles..."
-for file in $files; do
-    src="$dotfiledir/$file"
-    dest="$HOME/$file"
-    if [ ! -e "$src" ]; then
-        echo "Warning: $src does not exist, skipping."
-        continue
-    fi
-    echo "Creating symlink: $dest -> $src"
-    ln -sf "$src" "$dest"
-done
+packages=(git vim zsh)
 
 install_packages_mac() {
-    if [ -x $dotfiledir/brew.sh ]; then
+    if [ -x "$dotfiledir/brew.sh" ]; then
         echo "Detected macOS. Running brew.sh."
-        $dotfiledir/brew.sh
+        "$dotfiledir/brew.sh"
     else
         echo "brew.sh not found or not executable!"
-        exit 1
-    fi
-}
-
-install_packages_ubuntu() {
-    if [ -x $dotfiledir/apt.sh ]; then
-        echo "Detected Ubuntu. Running apt.sh."
-        $dotfiledir/apt.sh
-    else
-        echo "apt.sh not found or not executable!"
         exit 1
     fi
 }
@@ -42,15 +20,20 @@ install_packages_ubuntu() {
 echo "Detecting OS..."
 if [[ "$OSTYPE" == "darwin"* ]]; then
     install_packages_mac
-elif [ -f /etc/os-release ]; then
-    . /etc/os-release
-    if [[ "$ID" == "ubuntu" ]]; then
-        install_packages_ubuntu
-    else
-        echo "Unsupported Linux distribution: $ID"
-        exit 1
-    fi
 else
     echo "Unsupported OS: $OSTYPE"
     exit 1
 fi
+
+echo "Stowing dotfiles..."
+cd "$dotfiledir"
+for pkg in "${packages[@]}"; do
+    if [ -d "$pkg" ]; then
+        echo "  stow $pkg"
+        stow --restow --target="$HOME" "$pkg"
+    else
+        echo "  Warning: package directory '$pkg' not found, skipping."
+    fi
+done
+
+echo "Done."
