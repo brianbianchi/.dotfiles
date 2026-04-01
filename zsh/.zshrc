@@ -6,6 +6,7 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/theme.toml)"
 # Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+bindkey '^ ' autosuggest-accept
 
 # Auto-source .env file when entering a directory
 _load_dotenv() {

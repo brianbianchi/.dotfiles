@@ -39,4 +39,4 @@ background-blur = true
 window-padding-x = 12
 window-padding-y = 8
 
-macos-titlebar-style = native
+macos-titlebar-style = hidden
