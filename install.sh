@@ -5,7 +5,7 @@ set -euo pipefail
 ############################
 
 dotfiledir="$HOME/.dotfiles"
-packages=(git vim zsh ghostty ohmyposh)
+packages=(git vim zsh ghostty ohmyposh tmux)
 
 install_packages_mac() {
     if [ -x "$dotfiledir/brew.sh" ]; then
