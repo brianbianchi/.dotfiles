@@ -8,14 +8,12 @@ packages=(
     golang              # Go programming language
     htop                # interactive process viewer
     jandedobbeleer/oh-my-posh/oh-my-posh # cross-shell prompt theme engine
-    mailsy              # CLI email client
     neovim              # text editor
     nmap                # network scanner and security tool
     node                # JavaScript runtime
     pyenv               # Python version manager
     ruby                # Ruby programming language
     stow                # symlink manager for dotfiles
-    telnet              # network protocol client for debugging
     tmux                # terminal multiplexer
     tree                # directory tree viewer
     wget                # file downloader
@@ -29,8 +27,7 @@ apps=(
     docker              # containerization platform
     firefox             # web browser
     font-jetbrains-mono # monospace font for developers
-    font-sauce-code-pro-nerd-font # SauceCodePro with Nerd Font icons
-    ghostty             # fast, native terminal emulator
+    font-inconsolata-nerd-font # Inconsolata with Nerd Font icons
     google-chrome       # web browser
     prince              # HTML to PDF converter
     rectangle           # window snapping and management

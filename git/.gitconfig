@@ -40,5 +40,11 @@
 	changed = yellow bold
 	untracked = red bold
 
+[pull]
+	rebase = true
+
+[rerere]
+	enabled = true
+
 [push]
 	autoSetupRemote = true

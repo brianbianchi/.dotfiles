@@ -5,7 +5,7 @@ set -euo pipefail
 ############################
 
 dotfiledir="$HOME/.dotfiles"
-packages=(git vim zsh ghostty ohmyposh tmux)
+packages=(git vim zsh ohmyposh tmux)
 
 install_packages_mac() {
     if [ -x "$dotfiledir/brew.sh" ]; then
@@ -30,7 +30,7 @@ cd "$dotfiledir"
 for pkg in "${packages[@]}"; do
     if [ -d "$pkg" ]; then
         echo "  stow $pkg"
-        stow --restow --target="$HOME" "$pkg"
+        stow --adopt --restow --target="$HOME" "$pkg"
     else
         echo "  Warning: package directory '$pkg' not found, skipping."
     fi

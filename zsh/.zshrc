@@ -8,9 +8,9 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey '^ ' autosuggest-accept
 
-# Auto-source .env file when entering a directory
+# Auto-source .env file when entering a directory — only if owned by current user
 _load_dotenv() {
-  [[ -f .env ]] && source .env
+  [[ -f .env && -O .env ]] && source .env
 }
 add-zsh-hook chpwd _load_dotenv
 

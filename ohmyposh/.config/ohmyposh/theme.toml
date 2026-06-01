@@ -29,7 +29,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     [blocks.segments.properties]
       branch_icon = ''
       commit_icon = '@'
-      fetch_status = true
+      fetch_status = false
 
 [[blocks]]
   type = 'rprompt'
